@@ -6,51 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <a href="#"><img src="images/logo.svg" alt="Lorem logo image"></a>
+<body class="flex-column">
+    <header class="flex-between">
+        <a href="#"><img id="logo" src="images/logo.svg" alt="Lorem logo image"></a>
         <nav aria-label="header">
-            <a href="./rickroll.html">Rickroll</a>
+            <a href="./rickroll.html">Rickroll Link</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <figure>
-                <img src="images/image.png" alt="Lorem ipsum image">
+    <main class="flex-column">
+        <section id="main-content" class="flex-column">
+            <figure class="center ">
+                <img id="main-img" src="images/image.png" alt="Lorem ipsum image">
                 <figcaption>Lorem impsum graphics</figcaption>
             </figure>
             <article>
-                <h1>Lorem ipsum dolor sit amet</h1>
-                <p><span>Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia officiis iste
-                    nesciunt
-                    magni aperiam harum, exercitationem vero iure est eius fuga aut unde et laborum illum iusto
+                <h1 class="center">Lorem ipsum dolor sit amet</h1>
+                <p><span class="first-word">Lorem</span> ipsum dolor sit amet consectetur adipisicing
+                    elit.<strong>Doloribus
+                        magni aperiam harum.</strong> exercitationem vero iure est eius fuga aut unde et laborum illum
+                    iusto
                     laboriosam architecto?
-                    Architecto sed, ab eos laborum aliquam facere et in maiores doloremque atque, eligendi natus
+                    Architecto sed, facere et in maiores doloremque atque, eligendi natus
                     repellat molestiae harum numquam recusandae cumque labore, pariatur aperiam. Quod, iure similique at
                     nemo molestias autem.
                     <br />
                     <br />
                     Voluptates quis ea tempora sapiente rerum veritatis architecto, aperiam dolorem inventore? Deserunt
                     perspiciatis totam magni, maiores, culpa in quo sapiente quisquam quos sequi, temporibus deleniti
-                    minima! Sequi dolore vitae cupiditate!
+                    minima! <q>Sequi dolore vitae cupiditate!</q>
                     Voluptas quae deserunt minus provident in accusantium, soluta quibusdam earum alias deleniti
-                    asperiores voluptatem voluptate repellendus esse facilis eligendi quis nulla sit! Dicta delectus
+                    esse.<em>Facilis eligendi quis nulla sit!</em> Dicta delectus
                     corrupti, similique pariatur quos ipsum ea.
                     <br />
                     <br />
-                    Odio, dolore. Voluptatibus odio, quo nemo ea rerum aperiam consequuntur accusantium animi molestiae
-                    dolores commodi ipsa tempore voluptas harum maiores est quis, repudiandae exercitationem. Explicabo
-                    asperiores perspiciatis adipisci aliquid quasi.
+                <pre>
+                    Q: Odio, dolore?
+                    A: - Voluptatibus odio.
+                    Q: Quo nemo ea consequuntur.
+                    A: - Accntium animi molestiae!
+                </pre>
+                Odio, dolore. Voluptatibus odio, quo nemo ea rerum aperiam consequuntur accusantium animi molestiae
+                dolores commodi ipsa tempore voluptas harum maiores est quis, repudiandae exercitationem. Explicabo
+                asperiores perspiciatis adipisci aliquid quasi.
                 </p>
             </article>
         </section>
+        <section id="comments" class="flex-column center">
+            <hr>
+            <h2>Share your comments</h2>
+            <label for="comment">Write a comment:</label>
+            <textarea name="comment" id="comment" cols="20" rows="10"
+                placeholder="Share your thoughts here..."></textarea>
+            <button id="btn" class="center">send</button>
+        </section>
     </main>
-    <footer>
+    <footer class="flex-between">
         <p>&COPY Wannabe Dev, 2022</p>
         <div role="navigation" aria-label="footer">
-            <ul>
+            <ul class="flex-between">
                 <li><a href="https://discord.com/"><img src="images/discord.png" alt="discord icon"></a></li>
                 <li><a href="https://slack.com/"><img src="images/slack.png" alt="slack icon"></a></li>
                 <li><a href="https://github.com/"><img src="images/github.png" alt="github icon"></a></li>
